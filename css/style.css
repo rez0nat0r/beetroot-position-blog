@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #b07cf7;
+    min-height: 100vh;
+    font-family: "Raleway", sans-serif;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+    line-height: 25px;
+}
+
+.header h1 {
+    font-weight: 700;
+    font-size: 90px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.header p {
+    font-weight: 300;
+    width: 570px;
+    font-size: 17px;
+    margin-bottom: 50px;
+}
+
+
+
+.main {
+    min-width: 1170px;
+    height: 315px;
+    position: relative;
+}
+
+.cards {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex: 0 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+.card {
+    min-width: 370px;
+    height: 310px;
+    background-repeat: no-repeat;
+    margin-right: 30px;
+    background-position: center;
+    transition: .5s;
+}
+
+.card:hover {
+    box-shadow: 2px 3px 5px 0px #444;
+    cursor: pointer;
+}
+
+.card__first {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.61) , transparent), url(../img/img1.png);
+}
+.card__second {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.61) , transparent), url(../img/img2.png);
+}
+.card__third {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.61) , transparent), url(../img/img3.png);
+    margin-right: 0px;
+}
+
+.card__date {
+    width: 60px;
+    height: 60px;
+    line-height: 0.9;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 10%;
+    background-color: rgba(82, 88, 98, 0.5);
+    margin: 30px 0 0 30px;
+}
+
+.card__date span {
+    font-size: 21px;
+}
+
+
+.card__title {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 110px 50px 0 20px;
+}
+
+.card__description {
+    font-size: 13px;
+    font-weight: 300;
+    opacity: 0.8;
+    margin: 25px 50px 0 20px;
+}
+
+.footer {
+    margin-top: 50px;
+    margin-bottom: 120px;
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    width: 200px;
+    height: 55px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #f72b3b;
+    cursor: pointer;
+    border: 0;
+    transition: .7s;
+}
+
+.button:hover {
+    background-color: #ffa500;
+}
